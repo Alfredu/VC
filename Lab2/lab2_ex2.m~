@@ -1,0 +1,12 @@
+imatge = imread('Lab2/Lenna.png');
+imatge_grayscale = rgb2gray(imatge);
+mat2 = uint8(zeros(size(imatge_grayscale)));
+
+%hist = histoN(8, mat2);
+size(mat2);
+
+function h = histoN(n,imatge_gray)
+    nBins = 256/n;
+    h = zeros(n, 1);
+    
+end
