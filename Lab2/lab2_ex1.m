@@ -4,6 +4,7 @@ mat2 = uint8(zeros(size(imatge_grayscale)));
 
 mat2(:, 1:end-1) = imatge_grayscale(:, 2: end);
 mat3 = imatge_grayscale - mat2;
+mat3 = abs(mat3);
 mat3(:, end:end) = zeros(size(mat3(:, end:end)));
 
 [maxFila, posF] = max(mat3);
